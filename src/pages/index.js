@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Helmet from 'react-helmet'
 
 const Container = styled.div`
   margin: 3rem auto;
@@ -42,13 +43,18 @@ const Excerpt = styled.p`
 `
 
 const User = props => (
-  <UserWrapper>
+  <div>
+    <Helmet>
+      <script async defer src="https://storage.googleapis.com/lucky-orange-staging-public/core/lo.js?site-id=f8c0b29a"></script>
+    </Helmet>
+    <UserWrapper>
     <Avatar src={props.avatar} alt="" />
     <Description>
       <Username>{props.username}</Username>
       <Excerpt>{props.excerpt}</Excerpt>
     </Description>
   </UserWrapper>
+  </div>
 )
 
 export default function UsersList() {
