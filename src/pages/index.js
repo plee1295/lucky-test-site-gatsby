@@ -72,6 +72,7 @@ export default function UsersList() {
         avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
         excerpt="I'm Bob smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
       />
+      <input type="submit" value="hello input" />
     </Container>
   )
 }
