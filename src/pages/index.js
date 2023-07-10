@@ -2,8 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import Helmet from 'react-helmet'
 
-import gtm from '../gtm'
-
 const Container = styled.div`
   margin: 3rem auto;
   max-width: 600px;
@@ -47,8 +45,7 @@ const Excerpt = styled.p`
 const User = props => (
   <div>
     <Helmet>
-      <script async defer src="../gtm.js"></script>
-      <script async defer src="https://storage.googleapis.com/lucky-orange-staging-public/core/lo.js?site-id=8cc665b7"></script>
+      <script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=3d890f28"></script>
     </Helmet>
     <UserWrapper>
       <Avatar src={props.avatar} alt="" />
@@ -63,8 +60,6 @@ const User = props => (
 export default function UsersList() {
   return (
     <Container>
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MH7ZBLH"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h1>About Styled Components</h1>
       <p>Styled Components is cool</p>
       <User
